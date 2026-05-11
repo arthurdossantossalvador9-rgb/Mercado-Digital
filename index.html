@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>E-book - Liberdade Financeira</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Liberdade Financeira</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap" rel="stylesheet">
 
@@ -20,37 +20,42 @@ body{
 background:#0f0f0f;
 color:white;
 line-height:1.8;
+overflow-x:hidden;
 }
 
 .hero{
-height:100vh;
+min-height:100vh;
 display:flex;
 justify-content:center;
 align-items:center;
-text-align:center;
-padding:30px;
+padding:50px 8%;
 background:
-radial-gradient(circle at top right,#3b1c74 0%,transparent 30%),
-radial-gradient(circle at bottom left,#ffd70022 0%,transparent 30%),
+radial-gradient(circle at top right,#311b92 0%,transparent 30%),
+radial-gradient(circle at bottom left,#ffd70033 0%,transparent 30%),
 #0f0f0f;
 }
 
-.hero-content{
-max-width:900px;
+.container{
+max-width:1200px;
+width:100%;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:60px;
+align-items:center;
 }
 
 .badge{
 display:inline-block;
-padding:10px 22px;
+padding:10px 20px;
 border:1px solid gold;
 border-radius:30px;
 color:gold;
-margin-bottom:25px;
 font-size:14px;
+margin-bottom:25px;
 }
 
 h1{
-font-size:68px;
+font-size:65px;
 line-height:1.1;
 margin-bottom:25px;
 }
@@ -59,8 +64,8 @@ margin-bottom:25px;
 color:gold;
 }
 
-.hero p{
-font-size:20px;
+.subtitle{
+font-size:19px;
 color:#d0d0d0;
 margin-bottom:35px;
 }
@@ -78,71 +83,116 @@ transition:.3s;
 
 .btn:hover{
 transform:translateY(-5px);
+box-shadow:0 10px 25px rgba(255,215,0,0.3);
+}
+
+.ebook{
+display:flex;
+justify-content:center;
+}
+
+.book{
+width:330px;
+height:470px;
+background:linear-gradient(145deg,#161616,#242424);
+border-radius:25px;
+padding:35px;
+border:2px solid rgba(255,215,0,0.4);
+transform:rotate(-5deg);
+box-shadow:0 25px 50px rgba(0,0,0,0.6);
+}
+
+.book h2{
+font-size:42px;
+margin-top:60px;
+margin-bottom:20px;
+}
+
+.book p{
+color:#cfcfcf;
 }
 
 .section{
-padding:90px 10%;
+padding:100px 10%;
 max-width:1200px;
 margin:auto;
 }
 
-.section h2{
-font-size:42px;
-margin-bottom:30px;
-color:gold;
+.section-title{
+text-align:center;
+font-size:48px;
+margin-bottom:70px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
 }
 
 .card{
 background:#181818;
 padding:35px;
 border-radius:25px;
-margin-bottom:35px;
 border:1px solid rgba(255,255,255,0.08);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+border-color:gold;
 }
 
 .card h3{
+font-size:26px;
 margin-bottom:18px;
-font-size:28px;
+color:gold;
 }
 
 .card p{
 color:#d0d0d0;
-margin-bottom:18px;
 }
 
-.step{
-background:#101010;
-padding:18px;
-border-left:4px solid gold;
-border-radius:12px;
-margin-top:18px;
+.final{
+margin-top:100px;
+text-align:center;
+background:#181818;
+padding:60px;
+border-radius:30px;
+border:1px solid rgba(255,255,255,0.08);
 }
 
-.highlight{
-color:gold;
-font-weight:700;
+.final h2{
+font-size:42px;
+margin-bottom:25px;
 }
 
 .footer{
 text-align:center;
-padding:50px;
+padding:40px;
 color:#777;
 border-top:1px solid rgba(255,255,255,0.08);
-margin-top:50px;
+margin-top:80px;
 }
 
-@media(max-width:800px){
+@media(max-width:900px){
+
+.container{
+grid-template-columns:1fr;
+text-align:center;
+}
 
 h1{
 font-size:45px;
 }
 
-.hero p{
-font-size:17px;
+.book{
+width:280px;
+height:400px;
 }
 
-.section h2{
-font-size:34px;
+.section-title{
+font-size:38px;
 }
 
 }
@@ -154,21 +204,120 @@ font-size:34px;
 
 <section class="hero">
 
-<div class="hero-content">
+<div class="container">
+
+<div>
 
 <div class="badge">
-🔥 GUIA COMPLETO PASSO A PASSO
+🔥 MÉTODO DIGITAL PASSO A PASSO
 </div>
 
 <h1>
-Hoje eu vou te ensinar como alcançar a sua <span class="gold">Liberdade Financeira</span>
+Conquiste sua <span class="gold">Liberdade Financeira</span> usando apenas internet
 </h1>
 
-<p>
-Vou pegar na sua mão e te mostrar exatamente como criar um e-book, vender na internet e usar inteligência artificial pra divulgar automaticamente.
+<p class="subtitle">
+Vou pegar na sua mão e te ensinar como criar e vender eBooks usando IA, Canva, Kiwify e vídeos virais no TikTok, Shorts e Reels.
 </p>
 
-<a href="#ebook" class="btn">
+<a href="#" class="btn">
+QUERO COMEÇAR AGORA
+</a>
+
+</div>
+
+<div class="ebook">
+
+<div class="book">
+
+<h2>
+Liberdade Financeira
+</h2>
+
+<p>
+O guia definitivo para aprender a ganhar dinheiro na internet usando inteligência artificial.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="section-title">
+O que você vai aprender
+</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>
+📘 Criar eBooks com IA
+</h3>
+
+<p>
+Aprenda como usar ChatGPT e Canva para gerar eBooks profissionais em poucos minutos.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>
+💰 Vender na Kiwify
+</h3>
+
+<p>
+Descubra como colocar seu produto no ar e começar a receber pagamentos online.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>
+🎥 Criar Shorts Virais
+</h3>
+
+<p>
+Use IA para transformar vídeos e podcasts em Shorts automáticos para viralizar.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>
+🚀 Divulgação Automática
+</h3>
+
+<p>
+Aprenda estratégias simples para divulgar no TikTok, Instagram e YouTube Shorts.
+</p>
+
+</div>
+
+</div>
+
+<div class="final">
+
+<h2>
+🔥 Comece Hoje Mesmo
+</h2>
+
+<p>
+Você não precisa ser especialista pra começar.
+Usando inteligência artificial, qualquer pessoa consegue criar produtos digitais e vender pela internet.
+</p>
+
+<br>
+
+<a href="#" class="btn">
 COMEÇAR AGORA
 </a>
 
@@ -176,201 +325,8 @@ COMEÇAR AGORA
 
 </section>
 
-<section class="section" id="ebook">
-
-<h2>
-📘 PASSO 1 — GERANDO O E-BOOK COM IA
-</h2>
-
-<div class="card">
-
-<h3>
-Usando ChatGPT + Canva IA
-</h3>
-
-<p>
-Primeiro você vai abrir o ChatGPT e pedir pra ele criar um prompt profissional pra IA do Canva gerar um e-book.
-</p>
-
-<div class="step">
-<span class="highlight">
-Exemplo:
-</span><br><br>
-
-“Crie um e-book profissional ensinando como ganhar dinheiro na internet usando inteligência artificial, design premium, linguagem persuasiva e visual moderno.”
-</div>
-
-<p>
-Depois você pega esse prompt e coloca na IA do Canva.
-</p>
-
-<p>
-Se não gostar do resultado, manda gerar novamente até ficar perfeito.
-</p>
-
-</div>
-
-<h2>
-🎨 PASSO 2 — DEIXANDO O E-BOOK PROFISSIONAL
-</h2>
-
-<div class="card">
-
-<h3>
-Design que vende
-</h3>
-
-<p>
-No Canva você vai:
-</p>
-
-<div class="step">
-✅ Trocar imagens<br>
-✅ Mudar fontes<br>
-✅ Adicionar capas premium<br>
-✅ Colocar gráficos modernos<br>
-✅ Deixar aparência de produto caro
-</div>
-
-<p>
-Quanto mais profissional parecer, maior a chance das pessoas comprarem.
-</p>
-
-</div>
-
-<h2>
-💰 PASSO 3 — COLOCANDO NA KIWIFY
-</h2>
-
-<div class="card">
-
-<h3>
-Transformando em produto
-</h3>
-
-<p>
-Agora você cria uma conta na Kiwify e sobe seu e-book.
-</p>
-
-<div class="step">
-1. Criar conta<br>
-2. Clicar em “Novo Produto”<br>
-3. Escolher “Produto Digital”<br>
-4. Enviar PDF do e-book<br>
-5. Definir preço<br>
-6. Criar página de vendas
-</div>
-
-<p>
-Depois disso a plataforma vai gerar automaticamente seu link de venda.
-</p>
-
-</div>
-
-<h2>
-🎥 PASSO 4 — IA QUE TRANSFORMA PODCAST EM SHORTS
-</h2>
-
-<div class="card">
-
-<h3>
-Criando vídeos virais automaticamente
-</h3>
-
-<p>
-Agora vem uma das partes mais fortes:
-</p>
-
-<p>
-Você pode usar IA pra transformar podcasts e vídeos longos em Shorts virais automaticamente.
-</p>
-
-<div class="step">
-✅ Opus Clip<br>
-✅ CapCut AI<br>
-✅ Klap AI
-</div>
-
-<p>
-Essas IAs cortam automaticamente os melhores momentos e criam vídeos prontos pro TikTok, Reels e YouTube Shorts.
-</p>
-
-<p>
-Depois disso é só postar os vídeos diariamente.
-</p>
-
-</div>
-
-<h2>
-🚀 PASSO 5 — DIVULGAÇÃO
-</h2>
-
-<div class="card">
-
-<h3>
-Agora é só escalar
-</h3>
-
-<p>
-Poste Shorts todos os dias.
-</p>
-
-<div class="step">
-✅ TikTok<br>
-✅ Instagram Reels<br>
-✅ YouTube Shorts
-</div>
-
-<p>
-E o mais importante:
-</p>
-
-<div class="step">
-🔥 Coloque SEMPRE o link do seu produto na bio.
-</div>
-
-<p>
-Os vídeos trazem visualizações, as visualizações trazem cliques e os cliques viram vendas.
-</p>
-
-</div>
-
-<h2>
-🏆 FINAL
-</h2>
-
-<div class="card">
-
-<h3>
-Você não precisa começar perfeito
-</h3>
-
-<p>
-A maioria das pessoas nunca começa.
-</p>
-
-<p>
-Quem aprende a usar IA cedo pode sair muito na frente.
-</p>
-
-<p>
-Mesmo começando só com celular, você já consegue criar produtos digitais e vender pela internet.
-</p>
-
-<p>
-O segredo é consistência.
-</p>
-
-<p>
-Continue aprendendo, melhorando e postando conteúdo todos os dias.
-</p>
-
-</div>
-
-</section>
-
 <div class="footer">
-© 2026 - Liberdade Financeira
+© 2026 - Liberdade Financeira | Todos os direitos reservados.
 </div>
 
 </body>
