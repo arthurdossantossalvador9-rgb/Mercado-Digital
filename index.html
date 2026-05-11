@@ -13,25 +13,21 @@
 
 body{
 font-family:'Poppins',sans-serif;
-background:#07070a;
+background:#050505;
 overflow-x:hidden;
 }
 
-.glow{
-box-shadow:0 0 30px rgba(255,215,0,0.15);
-}
-
-.hero-bg{
+.hero{
 background:
-radial-gradient(circle at top right,#1e3a8a 0%,transparent 25%),
+radial-gradient(circle at top right,#1d4ed8 0%,transparent 30%),
 radial-gradient(circle at bottom left,#facc15 0%,transparent 20%),
-#07070a;
+#050505;
 }
 
 .card{
 background:rgba(255,255,255,0.03);
-backdrop-filter:blur(10px);
 border:1px solid rgba(255,255,255,0.08);
+backdrop-filter:blur(10px);
 transition:0.3s;
 }
 
@@ -45,12 +41,16 @@ color:#facc15;
 }
 
 .book{
-transform:rotate(-6deg);
+transform:rotate(-5deg);
 transition:0.4s;
 }
 
 .book:hover{
 transform:rotate(0deg) scale(1.03);
+}
+
+.glow{
+box-shadow:0 0 35px rgba(250,204,21,0.15);
 }
 
 html{
@@ -64,14 +64,14 @@ scroll-behavior:smooth;
 
 <!-- HERO -->
 
-<section class="hero-bg min-h-screen flex items-center px-6 lg:px-20 py-20">
+<section class="hero min-h-screen flex items-center px-6 lg:px-20 py-20">
 
 <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
 
 <div>
 
 <div class="inline-block border border-yellow-400 text-yellow-400 px-5 py-2 rounded-full text-sm mb-6">
-🔥 GUIA COMPLETO PASSO A PASSO
+🔥 MÉTODO DIGITAL PASSO A PASSO
 </div>
 
 <h1 class="text-5xl lg:text-7xl font-extrabold leading-tight mb-8">
@@ -82,8 +82,8 @@ Liberdade <span class="gold">Financeira</span>
 O guia definitivo para aprender a ganhar dinheiro na internet usando inteligência artificial.
 </p>
 
-<a href="#introducao" class="bg-yellow-400 text-black font-bold px-8 py-4 rounded-2xl inline-block hover:scale-105 transition">
-COMEÇAR LEITURA
+<a href="#cap1" class="bg-yellow-400 text-black font-bold px-8 py-4 rounded-2xl inline-block hover:scale-105 transition">
+COMEÇAR AGORA
 </a>
 
 </div>
@@ -93,7 +93,7 @@ COMEÇAR LEITURA
 <div class="book glow bg-gradient-to-br from-zinc-900 to-zinc-800 w-[320px] h-[450px] rounded-3xl p-8 border border-yellow-400/30">
 
 <div class="text-yellow-400 font-bold mb-6">
-E-BOOK PREMIUM
+EBOOK PREMIUM
 </div>
 
 <h2 class="text-4xl font-extrabold leading-tight mb-6">
@@ -101,11 +101,11 @@ Liberdade Financeira
 </h2>
 
 <p class="text-gray-300">
-Aprenda como criar produtos digitais usando IA, Canva, Kiwify e vídeos virais.
+Aprenda como criar produtos digitais usando IA, Canva, Kiwify e Shorts virais.
 </p>
 
 <div class="mt-10 border-t border-zinc-700 pt-5 text-sm text-gray-400">
-Guia atualizado 2026
+Atualizado 2026
 </div>
 
 </div>
@@ -116,30 +116,26 @@ Guia atualizado 2026
 
 </section>
 
-<!-- INTRODUÇÃO -->
+<!-- INTRO -->
 
-<section id="introducao" class="max-w-5xl mx-auto px-6 py-24">
+<section class="max-w-5xl mx-auto px-6 py-24">
 
 <h2 class="text-4xl font-bold gold mb-10">
 🔥 INTRODUÇÃO
 </h2>
 
-<div class="card rounded-3xl p-10 leading-9 text-gray-300 text-lg">
+<div class="card rounded-3xl p-10 text-gray-300 leading-9 text-lg">
 
 <p class="mb-6">
-Hoje qualquer pessoa consegue começar do zero usando apenas celular e internet.
+Hoje qualquer pessoa consegue começar usando apenas celular e internet.
 </p>
 
 <p class="mb-6">
-A inteligência artificial mudou completamente a internet e abriu oportunidades enormes para criar produtos digitais sem precisar ser especialista.
-</p>
-
-<p class="mb-6">
-Neste guia você vai aprender passo a passo como criar eBooks com IA, deixar tudo profissional usando Canva, publicar seus produtos e divulgar usando vídeos curtos virais.
+A inteligência artificial mudou completamente a internet e abriu novas formas de ganhar dinheiro online.
 </p>
 
 <p>
-Esse material foi feito principalmente para iniciantes.
+Neste guia você vai aprender as principais IAs usadas para criar eBooks, gerar design profissional, publicar produtos digitais e divulgar usando Shorts automáticos.
 </p>
 
 </div>
@@ -148,24 +144,29 @@ Esse material foi feito principalmente para iniciantes.
 
 <!-- CAPÍTULO 1 -->
 
-<section class="max-w-5xl mx-auto px-6 py-20">
+<section id="cap1" class="max-w-5xl mx-auto px-6 py-20">
 
 <h2 class="text-4xl font-bold gold mb-10">
-📘 CAPÍTULO 1 — COMO CRIAR EBOOKS COM IA
+📘 CAPÍTULO 1 — GERANDO O CONTEÚDO
 </h2>
 
 <div class="card rounded-3xl p-10 text-gray-300 leading-9 text-lg">
 
-<p class="mb-6">
-O primeiro passo é abrir o ChatGPT e pedir para ele gerar ideias profissionais.
-</p>
+<h3 class="text-2xl text-yellow-400 font-bold mb-6">
+IA Usadas
+</h3>
+
+<ul class="list-disc pl-8 space-y-4 mb-10">
+<li>ChatGPT</li>
+<li>Claude AI</li>
+</ul>
 
 <p class="mb-6">
-Você pode pedir:
+Abra o ChatGPT e peça:
 </p>
 
-<div class="bg-black/40 border border-yellow-400/20 rounded-2xl p-6 mb-8 text-yellow-300">
-“Crie um eBook profissional sobre ganhar dinheiro na internet usando inteligência artificial.”
+<div class="bg-black/40 border border-yellow-400/20 rounded-2xl p-6 text-yellow-300 mb-8">
+“Crie um eBook profissional ensinando como ganhar dinheiro na internet usando inteligência artificial.”
 </div>
 
 <p class="mb-6">
@@ -175,17 +176,17 @@ Depois peça:
 <ul class="list-disc pl-8 space-y-4 mb-8">
 <li>Títulos chamativos</li>
 <li>Capítulos automáticos</li>
-<li>Introduções profissionais</li>
-<li>Explicações simples</li>
-<li>Melhorias no texto</li>
+<li>Introdução</li>
+<li>Conclusão</li>
+<li>Dicas extras</li>
 </ul>
 
-<p class="mb-6">
-Se a resposta não ficar boa, peça:
+<p>
+Se não gostar da resposta peça:
 </p>
 
-<div class="bg-black/40 border border-yellow-400/20 rounded-2xl p-6 text-yellow-300">
-“Melhore o design do conteúdo e deixe mais profissional.”
+<div class="bg-black/40 border border-yellow-400/20 rounded-2xl p-6 text-yellow-300 mt-6">
+“Melhore o texto e deixe mais profissional.”
 </div>
 
 </div>
@@ -197,29 +198,41 @@ Se a resposta não ficar boa, peça:
 <section class="max-w-5xl mx-auto px-6 py-20">
 
 <h2 class="text-4xl font-bold gold mb-10">
-🎨 CAPÍTULO 2 — USANDO O CANVA IA
+🎨 CAPÍTULO 2 — DESIGN DO EBOOK
 </h2>
 
 <div class="card rounded-3xl p-10 text-gray-300 leading-9 text-lg">
 
-<p class="mb-6">
-Depois de gerar o conteúdo, abra o Canva e use as ferramentas de IA para criar páginas modernas.
-</p>
+<h3 class="text-2xl text-yellow-400 font-bold mb-6">
+IA Usada
+</h3>
 
-<ul class="list-disc pl-8 space-y-4 mb-8">
-<li>Criar capa premium</li>
-<li>Adicionar imagens</li>
-<li>Escolher fontes modernas</li>
-<li>Gerar páginas automáticas</li>
-<li>Organizar capítulos</li>
+<ul class="list-disc pl-8 space-y-4 mb-10">
+<li>Canva IA</li>
 </ul>
 
 <p class="mb-6">
-Use cores modernas como preto, dourado e azul escuro para dar aparência profissional.
+Abra o Canva e clique em “Criar Design”.
 </p>
 
+<p class="mb-6">
+Escolha “Ebook” e cole o conteúdo criado pelo ChatGPT.
+</p>
+
+<p class="mb-6">
+Depois:
+</p>
+
+<ul class="list-disc pl-8 space-y-4 mb-8">
+<li>Troque imagens</li>
+<li>Escolha fontes modernas</li>
+<li>Use preto + dourado</li>
+<li>Adicione ícones premium</li>
+<li>Organize os capítulos</li>
+</ul>
+
 <p>
-Quando terminar, exporte o projeto em PDF.
+Quando terminar exporte em PDF.
 </p>
 
 </div>
@@ -231,28 +244,27 @@ Quando terminar, exporte o projeto em PDF.
 <section class="max-w-5xl mx-auto px-6 py-20">
 
 <h2 class="text-4xl font-bold gold mb-10">
-💰 CAPÍTULO 3 — COMO PUBLICAR NA KIWIFY
+🖼️ CAPÍTULO 3 — GERANDO CAPA PROFISSIONAL
 </h2>
 
 <div class="card rounded-3xl p-10 text-gray-300 leading-9 text-lg">
 
-<ol class="list-decimal pl-8 space-y-4 mb-8">
-<li>Criar conta</li>
-<li>Criar produto digital</li>
-<li>Adicionar título</li>
-<li>Colocar descrição</li>
-<li>Enviar PDF</li>
-<li>Definir preço</li>
-<li>Publicar</li>
-</ol>
+<h3 class="text-2xl text-yellow-400 font-bold mb-6">
+IA Usadas
+</h3>
+
+<ul class="list-disc pl-8 space-y-4 mb-10">
+<li>Leonardo AI</li>
+<li>Ideogram AI</li>
+</ul>
 
 <p class="mb-6">
-Depois disso a plataforma gera automaticamente um link do seu produto.
+Use esse prompt:
 </p>
 
-<p>
-As plataformas digitais cuidam do pagamento e da entrega automaticamente.
-</p>
+<div class="bg-black/40 border border-yellow-400/20 rounded-2xl p-6 text-yellow-300">
+Luxury ebook cover about financial freedom, futuristic black and gold design, premium digital product, ultra realistic, 3D mockup
+</div>
 
 </div>
 
@@ -263,27 +275,30 @@ As plataformas digitais cuidam do pagamento e da entrega automaticamente.
 <section class="max-w-5xl mx-auto px-6 py-20">
 
 <h2 class="text-4xl font-bold gold mb-10">
-🎥 CAPÍTULO 4 — IA QUE TRANSFORMA PODCAST EM SHORTS
+💰 CAPÍTULO 4 — PUBLICANDO NA KIWIFY
 </h2>
 
 <div class="card rounded-3xl p-10 text-gray-300 leading-9 text-lg">
 
-<p class="mb-6">
-Algumas IAs conseguem transformar vídeos longos em Shorts automaticamente.
-</p>
+<h3 class="text-2xl text-yellow-400 font-bold mb-6">
+Plataforma
+</h3>
 
-<ul class="list-disc pl-8 space-y-4 mb-8">
-<li>Opus Clip</li>
-<li>CapCut AI</li>
-<li>Klap AI</li>
+<ul class="list-disc pl-8 space-y-4 mb-10">
+<li>Kiwify</li>
 </ul>
 
-<p class="mb-6">
-Você só cola o vídeo e a IA cria cortes automáticos.
-</p>
+<ol class="list-decimal pl-8 space-y-4 mb-8">
+<li>Criar conta</li>
+<li>Novo Produto</li>
+<li>Produto Digital</li>
+<li>Enviar PDF</li>
+<li>Definir preço</li>
+<li>Publicar</li>
+</ol>
 
 <p>
-Isso ajuda muito a criar vídeos virais para TikTok, Reels e Shorts.
+Depois a plataforma gera automaticamente seu link.
 </p>
 
 </div>
@@ -295,31 +310,66 @@ Isso ajuda muito a criar vídeos virais para TikTok, Reels e Shorts.
 <section class="max-w-5xl mx-auto px-6 py-20">
 
 <h2 class="text-4xl font-bold gold mb-10">
-🚀 CAPÍTULO 5 — DIVULGAÇÃO
+🎥 CAPÍTULO 5 — SHORTS AUTOMÁTICOS
+</h2>
+
+<div class="card rounded-3xl p-10 text-gray-300 leading-9 text-lg">
+
+<h3 class="text-2xl text-yellow-400 font-bold mb-6">
+IA Usadas
+</h3>
+
+<ul class="list-disc pl-8 space-y-4 mb-10">
+<li>Opus Clip</li>
+<li>CapCut AI</li>
+<li>Klap AI</li>
+</ul>
+
+<p class="mb-6">
+Essas IAs pegam vídeos longos e transformam automaticamente em Shorts virais.
+</p>
+
+<p>
+Você só cola o vídeo e a IA faz os cortes.
+</p>
+
+</div>
+
+</section>
+
+<!-- CAPÍTULO 6 -->
+
+<section class="max-w-5xl mx-auto px-6 py-20">
+
+<h2 class="text-4xl font-bold gold mb-10">
+🚀 CAPÍTULO 6 — DIVULGAÇÃO
 </h2>
 
 <div class="card rounded-3xl p-10 text-gray-300 leading-9 text-lg">
 
 <p class="mb-6">
-Agora é hora de divulgar.
+Poste diariamente:
 </p>
 
-<ul class="list-disc pl-8 space-y-4 mb-8">
+<ul class="list-disc pl-8 space-y-4 mb-10">
 <li>TikTok</li>
-<li>YouTube Shorts</li>
 <li>Instagram Reels</li>
+<li>YouTube Shorts</li>
 </ul>
 
 <p class="mb-6">
-Poste vídeos diariamente e use títulos chamativos.
+Use:
 </p>
 
-<p class="mb-6">
-Coloque o link do produto na bio.
-</p>
+<ul class="list-disc pl-8 space-y-4 mb-8">
+<li>Títulos chamativos</li>
+<li>Vídeos rápidos</li>
+<li>Legendas grandes</li>
+<li>Temas virais</li>
+</ul>
 
 <p>
-Quanto mais conteúdo você postar, maiores as chances de alcançar pessoas.
+Coloque sempre o link da Kiwify na bio.
 </p>
 
 </div>
@@ -338,8 +388,8 @@ Quanto mais conteúdo você postar, maiores as chances de alcançar pessoas.
 
 <p class="text-gray-300 text-xl leading-10">
 Você não precisa começar perfeito.
-O mais importante é consistência, aprendizado e evolução constante.
-Comece pequeno, aprenda aos poucos e continue melhorando.
+Comece pequeno, aprenda todos os dias e continue melhorando.
+Consistência vale mais que perfeição.
 </p>
 
 </div>
