@@ -1,333 +1,354 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Liberdade Financeira</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
-}
-
 body{
-background:#0f0f0f;
-color:white;
-line-height:1.8;
+font-family:'Poppins',sans-serif;
+background:#07070a;
 overflow-x:hidden;
 }
 
-.hero{
-min-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-padding:50px 8%;
+.glow{
+box-shadow:0 0 30px rgba(255,215,0,0.15);
+}
+
+.hero-bg{
 background:
-radial-gradient(circle at top right,#311b92 0%,transparent 30%),
-radial-gradient(circle at bottom left,#ffd70033 0%,transparent 30%),
-#0f0f0f;
-}
-
-.container{
-max-width:1200px;
-width:100%;
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:60px;
-align-items:center;
-}
-
-.badge{
-display:inline-block;
-padding:10px 20px;
-border:1px solid gold;
-border-radius:30px;
-color:gold;
-font-size:14px;
-margin-bottom:25px;
-}
-
-h1{
-font-size:65px;
-line-height:1.1;
-margin-bottom:25px;
-}
-
-.gold{
-color:gold;
-}
-
-.subtitle{
-font-size:19px;
-color:#d0d0d0;
-margin-bottom:35px;
-}
-
-.btn{
-display:inline-block;
-padding:18px 38px;
-background:gold;
-color:black;
-font-weight:700;
-text-decoration:none;
-border-radius:15px;
-transition:.3s;
-}
-
-.btn:hover{
-transform:translateY(-5px);
-box-shadow:0 10px 25px rgba(255,215,0,0.3);
-}
-
-.ebook{
-display:flex;
-justify-content:center;
-}
-
-.book{
-width:330px;
-height:470px;
-background:linear-gradient(145deg,#161616,#242424);
-border-radius:25px;
-padding:35px;
-border:2px solid rgba(255,215,0,0.4);
-transform:rotate(-5deg);
-box-shadow:0 25px 50px rgba(0,0,0,0.6);
-}
-
-.book h2{
-font-size:42px;
-margin-top:60px;
-margin-bottom:20px;
-}
-
-.book p{
-color:#cfcfcf;
-}
-
-.section{
-padding:100px 10%;
-max-width:1200px;
-margin:auto;
-}
-
-.section-title{
-text-align:center;
-font-size:48px;
-margin-bottom:70px;
-}
-
-.cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:30px;
+radial-gradient(circle at top right,#1e3a8a 0%,transparent 25%),
+radial-gradient(circle at bottom left,#facc15 0%,transparent 20%),
+#07070a;
 }
 
 .card{
-background:#181818;
-padding:35px;
-border-radius:25px;
+background:rgba(255,255,255,0.03);
+backdrop-filter:blur(10px);
 border:1px solid rgba(255,255,255,0.08);
-transition:.3s;
+transition:0.3s;
 }
 
 .card:hover{
 transform:translateY(-8px);
-border-color:gold;
+border-color:rgba(250,204,21,0.5);
 }
 
-.card h3{
-font-size:26px;
-margin-bottom:18px;
-color:gold;
-}
-
-.card p{
-color:#d0d0d0;
-}
-
-.final{
-margin-top:100px;
-text-align:center;
-background:#181818;
-padding:60px;
-border-radius:30px;
-border:1px solid rgba(255,255,255,0.08);
-}
-
-.final h2{
-font-size:42px;
-margin-bottom:25px;
-}
-
-.footer{
-text-align:center;
-padding:40px;
-color:#777;
-border-top:1px solid rgba(255,255,255,0.08);
-margin-top:80px;
-}
-
-@media(max-width:900px){
-
-.container{
-grid-template-columns:1fr;
-text-align:center;
-}
-
-h1{
-font-size:45px;
+.gold{
+color:#facc15;
 }
 
 .book{
-width:280px;
-height:400px;
+transform:rotate(-6deg);
+transition:0.4s;
 }
 
-.section-title{
-font-size:38px;
+.book:hover{
+transform:rotate(0deg) scale(1.03);
 }
 
+html{
+scroll-behavior:smooth;
 }
 
 </style>
 </head>
 
-<body>
+<body class="text-white">
 
-<section class="hero">
+<!-- HERO -->
 
-<div class="container">
+<section class="hero-bg min-h-screen flex items-center px-6 lg:px-20 py-20">
+
+<div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
 
 <div>
 
-<div class="badge">
-🔥 MÉTODO DIGITAL PASSO A PASSO
+<div class="inline-block border border-yellow-400 text-yellow-400 px-5 py-2 rounded-full text-sm mb-6">
+🔥 GUIA COMPLETO PASSO A PASSO
 </div>
 
-<h1>
-Conquiste sua <span class="gold">Liberdade Financeira</span> usando apenas internet
+<h1 class="text-5xl lg:text-7xl font-extrabold leading-tight mb-8">
+Liberdade <span class="gold">Financeira</span>
 </h1>
 
-<p class="subtitle">
-Vou pegar na sua mão e te ensinar como criar e vender eBooks usando IA, Canva, Kiwify e vídeos virais no TikTok, Shorts e Reels.
-</p>
-
-<a href="#" class="btn">
-QUERO COMEÇAR AGORA
-</a>
-
-</div>
-
-<div class="ebook">
-
-<div class="book">
-
-<h2>
-Liberdade Financeira
-</h2>
-
-<p>
+<p class="text-xl text-gray-300 leading-relaxed mb-8">
 O guia definitivo para aprender a ganhar dinheiro na internet usando inteligência artificial.
 </p>
 
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<section class="section">
-
-<h2 class="section-title">
-O que você vai aprender
-</h2>
-
-<div class="cards">
-
-<div class="card">
-
-<h3>
-📘 Criar eBooks com IA
-</h3>
-
-<p>
-Aprenda como usar ChatGPT e Canva para gerar eBooks profissionais em poucos minutos.
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>
-💰 Vender na Kiwify
-</h3>
-
-<p>
-Descubra como colocar seu produto no ar e começar a receber pagamentos online.
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>
-🎥 Criar Shorts Virais
-</h3>
-
-<p>
-Use IA para transformar vídeos e podcasts em Shorts automáticos para viralizar.
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>
-🚀 Divulgação Automática
-</h3>
-
-<p>
-Aprenda estratégias simples para divulgar no TikTok, Instagram e YouTube Shorts.
-</p>
-
-</div>
-
-</div>
-
-<div class="final">
-
-<h2>
-🔥 Comece Hoje Mesmo
-</h2>
-
-<p>
-Você não precisa ser especialista pra começar.
-Usando inteligência artificial, qualquer pessoa consegue criar produtos digitais e vender pela internet.
-</p>
-
-<br>
-
-<a href="#" class="btn">
-COMEÇAR AGORA
+<a href="#introducao" class="bg-yellow-400 text-black font-bold px-8 py-4 rounded-2xl inline-block hover:scale-105 transition">
+COMEÇAR LEITURA
 </a>
 
 </div>
 
+<div class="flex justify-center">
+
+<div class="book glow bg-gradient-to-br from-zinc-900 to-zinc-800 w-[320px] h-[450px] rounded-3xl p-8 border border-yellow-400/30">
+
+<div class="text-yellow-400 font-bold mb-6">
+E-BOOK PREMIUM
+</div>
+
+<h2 class="text-4xl font-extrabold leading-tight mb-6">
+Liberdade Financeira
+</h2>
+
+<p class="text-gray-300">
+Aprenda como criar produtos digitais usando IA, Canva, Kiwify e vídeos virais.
+</p>
+
+<div class="mt-10 border-t border-zinc-700 pt-5 text-sm text-gray-400">
+Guia atualizado 2026
+</div>
+
+</div>
+
+</div>
+
+</div>
+
 </section>
 
-<div class="footer">
-© 2026 - Liberdade Financeira | Todos os direitos reservados.
+<!-- INTRODUÇÃO -->
+
+<section id="introducao" class="max-w-5xl mx-auto px-6 py-24">
+
+<h2 class="text-4xl font-bold gold mb-10">
+🔥 INTRODUÇÃO
+</h2>
+
+<div class="card rounded-3xl p-10 leading-9 text-gray-300 text-lg">
+
+<p class="mb-6">
+Hoje qualquer pessoa consegue começar do zero usando apenas celular e internet.
+</p>
+
+<p class="mb-6">
+A inteligência artificial mudou completamente a internet e abriu oportunidades enormes para criar produtos digitais sem precisar ser especialista.
+</p>
+
+<p class="mb-6">
+Neste guia você vai aprender passo a passo como criar eBooks com IA, deixar tudo profissional usando Canva, publicar seus produtos e divulgar usando vídeos curtos virais.
+</p>
+
+<p>
+Esse material foi feito principalmente para iniciantes.
+</p>
+
 </div>
+
+</section>
+
+<!-- CAPÍTULO 1 -->
+
+<section class="max-w-5xl mx-auto px-6 py-20">
+
+<h2 class="text-4xl font-bold gold mb-10">
+📘 CAPÍTULO 1 — COMO CRIAR EBOOKS COM IA
+</h2>
+
+<div class="card rounded-3xl p-10 text-gray-300 leading-9 text-lg">
+
+<p class="mb-6">
+O primeiro passo é abrir o ChatGPT e pedir para ele gerar ideias profissionais.
+</p>
+
+<p class="mb-6">
+Você pode pedir:
+</p>
+
+<div class="bg-black/40 border border-yellow-400/20 rounded-2xl p-6 mb-8 text-yellow-300">
+“Crie um eBook profissional sobre ganhar dinheiro na internet usando inteligência artificial.”
+</div>
+
+<p class="mb-6">
+Depois peça:
+</p>
+
+<ul class="list-disc pl-8 space-y-4 mb-8">
+<li>Títulos chamativos</li>
+<li>Capítulos automáticos</li>
+<li>Introduções profissionais</li>
+<li>Explicações simples</li>
+<li>Melhorias no texto</li>
+</ul>
+
+<p class="mb-6">
+Se a resposta não ficar boa, peça:
+</p>
+
+<div class="bg-black/40 border border-yellow-400/20 rounded-2xl p-6 text-yellow-300">
+“Melhore o design do conteúdo e deixe mais profissional.”
+</div>
+
+</div>
+
+</section>
+
+<!-- CAPÍTULO 2 -->
+
+<section class="max-w-5xl mx-auto px-6 py-20">
+
+<h2 class="text-4xl font-bold gold mb-10">
+🎨 CAPÍTULO 2 — USANDO O CANVA IA
+</h2>
+
+<div class="card rounded-3xl p-10 text-gray-300 leading-9 text-lg">
+
+<p class="mb-6">
+Depois de gerar o conteúdo, abra o Canva e use as ferramentas de IA para criar páginas modernas.
+</p>
+
+<ul class="list-disc pl-8 space-y-4 mb-8">
+<li>Criar capa premium</li>
+<li>Adicionar imagens</li>
+<li>Escolher fontes modernas</li>
+<li>Gerar páginas automáticas</li>
+<li>Organizar capítulos</li>
+</ul>
+
+<p class="mb-6">
+Use cores modernas como preto, dourado e azul escuro para dar aparência profissional.
+</p>
+
+<p>
+Quando terminar, exporte o projeto em PDF.
+</p>
+
+</div>
+
+</section>
+
+<!-- CAPÍTULO 3 -->
+
+<section class="max-w-5xl mx-auto px-6 py-20">
+
+<h2 class="text-4xl font-bold gold mb-10">
+💰 CAPÍTULO 3 — COMO PUBLICAR NA KIWIFY
+</h2>
+
+<div class="card rounded-3xl p-10 text-gray-300 leading-9 text-lg">
+
+<ol class="list-decimal pl-8 space-y-4 mb-8">
+<li>Criar conta</li>
+<li>Criar produto digital</li>
+<li>Adicionar título</li>
+<li>Colocar descrição</li>
+<li>Enviar PDF</li>
+<li>Definir preço</li>
+<li>Publicar</li>
+</ol>
+
+<p class="mb-6">
+Depois disso a plataforma gera automaticamente um link do seu produto.
+</p>
+
+<p>
+As plataformas digitais cuidam do pagamento e da entrega automaticamente.
+</p>
+
+</div>
+
+</section>
+
+<!-- CAPÍTULO 4 -->
+
+<section class="max-w-5xl mx-auto px-6 py-20">
+
+<h2 class="text-4xl font-bold gold mb-10">
+🎥 CAPÍTULO 4 — IA QUE TRANSFORMA PODCAST EM SHORTS
+</h2>
+
+<div class="card rounded-3xl p-10 text-gray-300 leading-9 text-lg">
+
+<p class="mb-6">
+Algumas IAs conseguem transformar vídeos longos em Shorts automaticamente.
+</p>
+
+<ul class="list-disc pl-8 space-y-4 mb-8">
+<li>Opus Clip</li>
+<li>CapCut AI</li>
+<li>Klap AI</li>
+</ul>
+
+<p class="mb-6">
+Você só cola o vídeo e a IA cria cortes automáticos.
+</p>
+
+<p>
+Isso ajuda muito a criar vídeos virais para TikTok, Reels e Shorts.
+</p>
+
+</div>
+
+</section>
+
+<!-- CAPÍTULO 5 -->
+
+<section class="max-w-5xl mx-auto px-6 py-20">
+
+<h2 class="text-4xl font-bold gold mb-10">
+🚀 CAPÍTULO 5 — DIVULGAÇÃO
+</h2>
+
+<div class="card rounded-3xl p-10 text-gray-300 leading-9 text-lg">
+
+<p class="mb-6">
+Agora é hora de divulgar.
+</p>
+
+<ul class="list-disc pl-8 space-y-4 mb-8">
+<li>TikTok</li>
+<li>YouTube Shorts</li>
+<li>Instagram Reels</li>
+</ul>
+
+<p class="mb-6">
+Poste vídeos diariamente e use títulos chamativos.
+</p>
+
+<p class="mb-6">
+Coloque o link do produto na bio.
+</p>
+
+<p>
+Quanto mais conteúdo você postar, maiores as chances de alcançar pessoas.
+</p>
+
+</div>
+
+</section>
+
+<!-- FINAL -->
+
+<section class="max-w-5xl mx-auto px-6 py-24">
+
+<div class="card rounded-3xl p-12 text-center glow">
+
+<h2 class="text-5xl font-bold gold mb-8">
+🏆 FINALIZAÇÃO
+</h2>
+
+<p class="text-gray-300 text-xl leading-10">
+Você não precisa começar perfeito.
+O mais importante é consistência, aprendizado e evolução constante.
+Comece pequeno, aprenda aos poucos e continue melhorando.
+</p>
+
+</div>
+
+</section>
+
+<footer class="border-t border-zinc-800 py-10 text-center text-gray-500">
+© 2026 - Liberdade Financeira
+</footer>
 
 </body>
 </html>
